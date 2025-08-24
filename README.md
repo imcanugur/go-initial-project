@@ -1,5 +1,8 @@
-# Go Initial Project 🚀
+<a href="https://opensource.org/" target="_blank" rel="noreferrer">
+  <img src="https://img.shields.io/badge/Open%20Source-Initiative-green?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="Open Source" height="40"/>
+</a>
 
+# Go Initial Project 🚀
 This project is a **Go-based API** built with **Gin Framework** and **GORM**.
 It includes JWT Authentication, a Generic Repository/Service structure, and Swagger documentation.
 
