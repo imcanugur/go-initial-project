@@ -26,12 +26,12 @@ jobs:
           mkdir -p build
           ext=""
           if [ "${{ matrix.goos }}" = "windows" ]; then ext=".exe"; fi
-          GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} go build -o build/agent-${{ matrix.goos }}-${{ matrix.goarch }}${ext} main.go
+          GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} go build -o build/project-${{ matrix.goos }}-${{ matrix.goarch }}${ext} main.go
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: agent-${{ matrix.goos }}-${{ matrix.goarch }}
+          name: project-${{ matrix.goos }}-${{ matrix.goarch }}
           path: build/*
 
   release:
